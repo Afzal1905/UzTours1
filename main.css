@@ -1,0 +1,241 @@
+@keyframes primary--main {
+  0% {
+    transform: translateX(-300px) rotateX(100deg);
+  }
+  90% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes primary--top {
+  0% {
+    transform: translateX(-300px) rotateX(100deg);
+  }
+  90% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes primary--bottom {
+  0% {
+    transform: translateX(300px) rotateX(100deg);
+  }
+  90% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes primary--button-center {
+  0% {
+    transform: translateY(100px);
+  }
+  90% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.text-center {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+.text-center .heading-primary--main {
+  position: absolute;
+  color: white;
+  letter-spacing: 30px;
+  font-size: 50px;
+  z-index: 1;
+  animation: primary--main 2s;
+}
+.text-center .heading-primary--top {
+  position: absolute;
+  left: 450px;
+  color: white;
+  z-index: 1;
+  letter-spacing: 30px;
+  font-size: 50px;
+  animation: primary--top 2s;
+}
+.text-center .heading-primary--bottom {
+  margin-top: 70px;
+  left: 20px;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  letter-spacing: 20px;
+  font-size: 50px;
+  animation: primary--bottom 2s;
+}
+
+.text-center-2 {
+  position: absolute;
+  top: 15%;
+  left: 11%;
+}
+.text-center-2 .heading-text {
+  font-size: 2.9rem;
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 2s;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-image: linear-gradient(to right, #00b09bbe, #96c93dc0);
+}
+.text-center-2 .heading-text:hover {
+  transform: skewX(15deg) skewY(2deg) scale(1.1);
+}
+
+.col-1-of-2 .heading-text-2 {
+  text-transform: uppercase;
+  opacity: 60%;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.col-1-of-2 .paragraph {
+  font-size: 16px;
+  opacity: 70%;
+}
+.col-1-of-2 .paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.col-1-of-2 .btn-text:link, .col-1-of-2 .btn-text:visited {
+  color: #00b09bbe;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  border-bottom: 1px solid #00b09bbe;
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+.col-1-of-2 .btn-text:hover {
+  color: white;
+  background-color: #00b09bbe;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.col-1-of-2 .btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+* section {
+  display: flex;
+}
+* section .wrap {
+  position: absolute;
+  margin: 2%;
+  width: 95%;
+  height: 90%;
+  background-image: linear-gradient(to right bottom, #00b09bbe, #96c93dc0);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+}
+* section .wrap img {
+  position: absolute;
+  margin: 30px;
+  z-index: 4;
+}
+* .section-about-div {
+  margin-top: 8%;
+}
+* .section-about-div .row {
+  width: 80rem;
+  margin: 0 auto;
+}
+* .section-about-div .row .col-1-of-2 {
+  width: calc((100% - 8rem) / 2);
+  display: inline-block;
+  margin-right: 3.8rem;
+}
+
+.button {
+  position: absolute;
+  margin-top: 170px;
+  cursor: pointer;
+  margin-left: 150px;
+}
+.button .btn-center {
+  position: absolute;
+  display: block;
+  width: 250px;
+  height: 60px;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  animation: primary--button-center 2s;
+}
+.button:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 2px 2px black;
+}
+.button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.button:active, .button button:focus {
+  outline: none;
+  transform: translateY(-0.1rem);
+}
+.button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: width 2s, height 2s;
+}
+
+.section-about {
+  position: absolute;
+  z-index: -1;
+  top: 80vh;
+  margin: 2%;
+  width: 95%;
+  height: 120vh;
+  padding: 25vh 0;
+  background-color: #f7f7f7;
+  display: inline-block;
+}
+
+.composition {
+  position: relative !important;
+}
+.composition__photo {
+  width: 55%;
+}
+.composition .composition__photo--p1 {
+  position: absolute;
+  top: -23rem;
+  left: 10rem;
+}
+.composition .composition__photo--p2 {
+  position: absolute;
+  left: 24rem;
+  bottom: 5rem;
+}
+.composition .composition__photo--p3 {
+  position: absolute;
+  left: 14rem;
+  top: -11rem;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,40 @@
+.button{
+  position: absolute;
+  margin-top: 170px;
+  cursor: pointer;
+  margin-left: 150px;
+  .btn-center{
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 60px;
+    background-color: $color-light;
+    border-radius: 30px;
+    text-align: center;
+    animation: primary--button-center 2s;
+  }
+  &:hover{
+    transform: translateY(-.3rem);
+    box-shadow: 2px 2px black;
+  }
+  &:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  &:active, button:focus{
+    outline: none;
+    transform: translateY(-.1rem);
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: width 2s, height 2s;
+  }
+}

@@ -1,0 +1,44 @@
+@keyframes primary--main {
+  0% {
+    transform: translateX(-300px) rotateX(100deg);
+  }
+  90% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes primary--top {
+  0% {
+    transform: translateX(-300px) rotateX(100deg);
+  }
+  90% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes primary--bottom {
+  0% {
+    transform: translateX(300px) rotateX(100deg);
+  }
+  90% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes primary--button-center {
+  0% {
+    transform: translateY(100px);
+  }
+  90% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

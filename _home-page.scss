@@ -1,0 +1,33 @@
+.section-about{
+  position: absolute;
+  z-index: -1;
+  top: 80vh;
+  margin: 2%;
+  width: 95%;
+  height: 120vh;
+  padding: 25vh 0;
+  background-color: $color-grey-light;
+  display: inline-block;
+}
+.composition{
+  position: relative!important;
+  &__photo{
+    width: 55%;
+  }
+  .composition__photo--p1{
+    position: absolute;
+    top: -23rem;
+    left: 10rem;
+  }
+  .composition__photo--p2{
+    position: absolute;
+    left: 24rem;
+    bottom: 5rem;
+  }
+  .composition__photo--p3{
+    position: absolute;
+    left: 14rem;
+    top: -11rem;
+  }
+
+}
